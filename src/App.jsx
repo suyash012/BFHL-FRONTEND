@@ -14,7 +14,7 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedJson = JSON.parse(jsonInput);
-      const res = await axios.post('https://bfhlsss-2pcdgf482-suyash012s-projects.vercel.app', parsedJson);
+      const res = await axios.post('https://bfhlsss-api.vercel.app/bfhl', parsedJson);
       setResponse(res.data);
       setError('');
     } catch (err) {
